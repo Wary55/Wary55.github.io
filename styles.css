@@ -1,37 +1,92 @@
-<html>
-<head>
-  <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>31az | 31ers eSports</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <img class="logo" src="Bilder\logo-transperent.png" alt="logo" width="150px" height="150px">
-    <nav>
-      <ul class="nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="eSports.html">eSports</a></li>
-        <li><a href="https://steamcommunity.com/groups/31az" target="_blank">Steamgruppe</a></li>
-      </ul>
-  </nav>
-<!--      <a class="cta" href="#"><button>Contact</button></a>-->
-  </header>
-  <div id="content">
-    <h1> Quickconnect </h1><br>
-    <table id="wrapTable">
-      <tr>
-        <td>
-          <a href="https://www.csgorunner.com/"><img src="Bilder\csgorunner.PNG" alt="CSGORunner"></a>
-        </td>
-        <td>
-          <a align = "right" href="https://www.csgonades.com/"><img src="Bilder\csgonades.webp" alt="CSGO Nades"></a>
-        </td>
-      </tr>
-    </table>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
-  </div>
-  <div id="footer">
-      <p id="footer">31ers eSports, est. 2016. For Contact click here: <a href="contact.html">Contact</a></p>
-</body>
-</html>
+html, body {
+    height: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; background-color: #24252A;
+}
+
+li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  order: 3;
+  margin-left: auto;
+}
+
+nav{
+  order: 1;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  order: 2;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(0,136,169,0);
+}
+
+#content {
+  color: #edf0f1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer{
+  color: #edf0f1;
+  font-family: "Montserrat", sans-serif;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#wrapTable {
+  width: auto;
+  border: 0px solid;
+  display: inline;
+}
